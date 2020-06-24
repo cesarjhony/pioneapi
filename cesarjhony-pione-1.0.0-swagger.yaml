@@ -199,11 +199,9 @@ paths:
           description: "propriedade na carga.conf['propriedade'], será adicionada no objeto da carga solicitada, é possível pedir mais de uma propriedade"
           required: false
           schema:
-            anyOf:
-              - type: string
-              - type: array
-                items:
-                  type: string
+            type: array
+            items:
+              type: string
       responses:
         '200':
           description: Retorna o estado da carga
